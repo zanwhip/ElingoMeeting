@@ -39,9 +39,9 @@ const formSchema = z.object({
   name: z.string().min(1, {
     message: "Channel name is required."
   }).refine(
-    name => name !== "general",
+    name => name !== "Classroon",
     {
-      message: "Channel name cannot be 'general'"
+      message: "Channel name cannot be 'Classroom'"
     }
   ),
   type: z.nativeEnum(ChannelType)
@@ -98,7 +98,7 @@ export const CreateChannelModal = () => {
 
   return (
     <Dialog open={isModalOpen} onOpenChange={handleClose}>
-      <DialogContent className="bg-white text-black p-0 overflow-hidden">
+      <DialogContent className="bg-blue-200 text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
             Create Channel
@@ -120,7 +120,7 @@ export const CreateChannelModal = () => {
                     <FormControl>
                       <Input
                         disabled={isLoading}
-                        className="bg-zinc-300/50 border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
+                        className="bg-white border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
                         placeholder="Enter channel name"
                         {...field}
                       />
@@ -142,7 +142,7 @@ export const CreateChannelModal = () => {
                     >
                       <FormControl>
                         <SelectTrigger
-                          className="bg-zinc-300/50 border-0 focus:ring-0 text-black ring-offset-0 focus:ring-offset-0 capitalize outline-none"
+                          className="bg-white border-0 focus:ring-0 text-black ring-offset-0 focus:ring-offset-0 capitalize outline-none"
                         >
                           <SelectValue placeholder="Select a channel type" />
                         </SelectTrigger>
@@ -164,8 +164,13 @@ export const CreateChannelModal = () => {
                 )}
               />
             </div>
-            <DialogFooter className="bg-gray-100 px-6 py-4">
-              <Button variant="primary" disabled={isLoading}>
+            <DialogFooter className="bg-blue-200 px-6 py-4">
+              <Button 
+              variant="primary" 
+              disabled={isLoading}
+              className="border border-gray-300 rounded-md bg-green-500 text-white hover:bg-green-600"
+              >
+              
                 Create
               </Button>
             </DialogFooter>

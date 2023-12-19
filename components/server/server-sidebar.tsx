@@ -81,7 +81,7 @@ export const ServerSidebar = async ({
           <ServerSearch
             data={[
               {
-                label: "Text Channels",
+                label: "CLASSROOM",
                 type: "channel",
                 data: textChannels?.map((channel) => ({
                   id: channel.id,
@@ -90,7 +90,7 @@ export const ServerSidebar = async ({
                 }))
               },
               {
-                label: "Voice Channels",
+                label: "ONLINE AUDIO CLASSES",
                 type: "channel",
                 data: audioChannels?.map((channel) => ({
                   id: channel.id,
@@ -99,7 +99,7 @@ export const ServerSidebar = async ({
                 }))
               },
               {
-                label: "Video Channels",
+                label: "ONLINE VIDEO CLASSES",
                 type: "channel",
                 data: videoChannels?.map((channel) => ({
                   id: channel.id,
@@ -126,7 +126,7 @@ export const ServerSidebar = async ({
               sectionType="channels"
               channelType={ChannelType.TEXT}
               role={role}
-              label="Text Channels"
+              label="CLASSROOM"
             />
             <div className="space-y-[2px]">
               {textChannels.map((channel) => (
@@ -146,7 +146,7 @@ export const ServerSidebar = async ({
               sectionType="channels"
               channelType={ChannelType.AUDIO}
               role={role}
-              label="Voice Channels"
+              label="ONLINE AUDIO CLASSES"
             />
             <div className="space-y-[2px]">
               {audioChannels.map((channel) => (
@@ -166,7 +166,7 @@ export const ServerSidebar = async ({
               sectionType="channels"
               channelType={ChannelType.VIDEO}
               role={role}
-              label="Video Channels"
+              label="ONLINE VIDEO CLASSES"
             />
             <div className="space-y-[2px]">
               {videoChannels.map((channel) => (

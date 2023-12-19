@@ -39,9 +39,9 @@ const formSchema = z.object({
   name: z.string().min(1, {
     message: "Channel name is required."
   }).refine(
-    name => name !== "general",
+    name => name !== "Classroom",
     {
-      message: "Channel name cannot be 'general'"
+      message: "Channel name cannot be 'Classroom'"
     }
   ),
   type: z.nativeEnum(ChannelType)
@@ -163,7 +163,12 @@ export const EditChannelModal = () => {
               />
             </div>
             <DialogFooter className="bg-gray-100 px-6 py-4">
-              <Button variant="primary" disabled={isLoading}>
+              <Button 
+              variant="primary" 
+              disabled={isLoading}
+              className="border border-gray-300 rounded-md bg-green-500 text-white hover:bg-green-600"
+              >
+                
                 Save
               </Button>
             </DialogFooter>
