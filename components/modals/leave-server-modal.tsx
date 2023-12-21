@@ -42,7 +42,7 @@ export const LeaveServerModal = () => {
 
   return (
     <Dialog open={isModalOpen} onOpenChange={onClose}>
-      <DialogContent className="bg-blue-200 text-black p-0 overflow-hidden">
+      <DialogContent className="bg-pink-200 text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
             Are you sure you want to leave ?
@@ -52,7 +52,7 @@ export const LeaveServerModal = () => {
           <span className="font-semibold text-indigo-500">{server?.name}</span>?
           </DialogDescription>
         </DialogHeader>
-        <DialogFooter className="bg-blue-200 px-6 py-4">
+        <DialogFooter className="bg-pink-200 px-6 py-4">
           <div className="flex items-center justify-between w-full">
             <Button
               disabled={isLoading}

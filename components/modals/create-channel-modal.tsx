@@ -98,10 +98,10 @@ export const CreateChannelModal = () => {
 
   return (
     <Dialog open={isModalOpen} onOpenChange={handleClose}>
-      <DialogContent className="bg-blue-200 text-black p-0 overflow-hidden">
+      <DialogContent className="bg-pink-200 text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
-            Create Channel
+            Create New Channel
           </DialogTitle>
         </DialogHeader>
         <Form {...form}>
@@ -164,11 +164,11 @@ export const CreateChannelModal = () => {
                 )}
               />
             </div>
-            <DialogFooter className="bg-blue-200 px-6 py-4">
+            <DialogFooter className="bg-pink-200 px-6 py-4">
               <Button 
               variant="primary" 
               disabled={isLoading}
-              className="border border-gray-300 rounded-md bg-green-500 text-white hover:bg-green-600"
+              className="border border-gray-300 rounded-md bg-blue-500 text-white hover:bg-green-600"
               >
               
                 Create

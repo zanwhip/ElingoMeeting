@@ -13,7 +13,7 @@ export const ChatWelcome = ({
     <div className="space-y-2 px-4 mb-4">
       
       <p className="text-xl md:text-3xl font-bold">
-        {type === "channel" ? "Let's start class" : ""}
+        {type === "channel" ? "Let's chat here" : ""}
       </p>
       <p className="text-zinc-600 dark:text-zinc-400 text-sm">
         {type === "channel"

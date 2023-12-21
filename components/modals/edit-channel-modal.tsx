@@ -162,11 +162,11 @@ export const EditChannelModal = () => {
                 )}
               />
             </div>
-            <DialogFooter className="bg-gray-100 px-6 py-4">
+            <DialogFooter className="bg-pink-100 px-6 py-4">
               <Button 
               variant="primary" 
               disabled={isLoading}
-              className="border border-gray-300 rounded-md bg-green-500 text-white hover:bg-green-600"
+              className="border border-gray-300 rounded-md bg-blue-500 text-white hover:bg-green-600"
               >
                 
                 Save

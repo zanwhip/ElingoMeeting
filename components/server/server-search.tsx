@@ -60,7 +60,7 @@ export const ServerSearch = ({
     <>
       <button
         onClick={() => setOpen(true)}
-        className="group px-2 py-2 rounded-md flex items-center gap-x-2 w-full hover:bg-zinc-700/10 dark:hover:bg-zinc-700/50 transition"
+        className="group bg-pink-200 px-2 py-2 rounded-md flex items-center gap-x-2 w-full hover:bg-zinc-700/10 dark:hover:bg-zinc-700/50 transition"
       >
         <Search className="w-4 h-4 text-zinc-500 dark:text-zinc-400" />
         <p
@@ -71,11 +71,11 @@ export const ServerSearch = ({
         <kbd
           className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground ml-auto"
         >
-          <span className="text-xs">⌘</span>K
+          <span className="text-xs">⌘</span>
         </kbd>
       </button>
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput placeholder="Search all channels and members" />
+        <CommandInput  placeholder="Search all channels and members" />
         <CommandList>
           <CommandEmpty>
             No Results found

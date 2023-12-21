@@ -73,13 +73,14 @@ export const InitialModal = () => {
 
   return (
     <Dialog open>
-      <DialogContent className="bg-blue-200 text-black p-0 overflow-hidden">
+      <DialogContent className="bg-pink-200 text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
-            Customize your server
+            Create your new server
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            Give your server a personality with a name and an image. You can always change it later.
+          Give your server a name and avatar. 
+          Rest assured that you can change it at any time.
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
@@ -126,7 +127,7 @@ export const InitialModal = () => {
                 )}
               />
             </div>
-            <DialogFooter className="bg-blue-200 px-6 py-4">
+            <DialogFooter className="bg-pink-200 px-6 py-4">
               <Button variant="primary" disabled={isLoading}>
                 Create
               </Button>
